@@ -2,6 +2,8 @@ const http = require('http');
 const fs = require('fs'); 
 const path = require('path'); 
 
+const hostname = 'localhost';
+const port = 3000;
 
 const server = http.createServer((req, res) => {
     if (req.url === '/index.html' || req.url === '/') {
@@ -23,6 +25,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
-});
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+})
