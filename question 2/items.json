@@ -16,11 +16,5 @@
     "price": 100,
     "size": "Large",
     "id": 3
-  },
-  {
-    "name": "women office shirt",
-    "price": 100,
-    "size": "Medium",
-    "id": 4
   }
 ]
